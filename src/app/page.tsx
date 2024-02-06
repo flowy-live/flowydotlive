@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="flex flex-row space-x-2">
             <input type="email" placeholder="email address" className="p-2 bg-gray-800 text-white rounded-md placeholder:text-sm" />
-            <button className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md">Request alpha product</button>
+            <button className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md">Get updates</button>
           </div>
         </div>
         <Image
