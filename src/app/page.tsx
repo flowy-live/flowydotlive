@@ -1,6 +1,38 @@
+"use client";
+
 import Image from "next/image";
+import { useCallback, useState } from "react";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const enterWaitlist = useCallback(async () => {
+    if (email === "") {
+      setIsError(true);
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://api.flowy.live/waitlist/${email}`, {
+        method: "POST",
+      });
+      if (response.status === 200) {
+        setIsError(false);
+        setIsSuccess(true);
+      } else {
+        setIsError(true);
+      }
+    } catch (e) {
+      setIsError(true);
+    }
+  }, [email, setIsError]);
+
+  const handleEmailChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  }, [setEmail]);
+
   return (
     <main className="bg-[#1e1e1e] flex min-h-screen flex-col lg:p-24 p-5">
       <div className="before:absolute before:h-[100px] before:w-full sm:before:w-[300px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute before:z-[1] after:z-2 after:h-[70px] after:w-full sm:after:w-[120px] after:translate-x-1/3 after:-translate-y-16 after:bg-gradient-conic after:from-purple-200 after:via-purple-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-dark-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-teal-900 after:dark:opacity-40 before:lg:h-[360px] z-4 py-4">
@@ -40,10 +72,16 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row space-x-2">
-            <input type="email" placeholder="email address" className="p-2 bg-gray-800 text-white rounded-md placeholder:text-sm" />
-            <button className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md font-semibold">Join waitlist</button>
+            {isSuccess ? <p className="text-green-500">You've been added to the waitlist!</p> :
+              <>
+                <input value={email} onChange={handleEmailChange} type="email" placeholder="email address" className="p-2 bg-gray-800 text-white rounded-md placeholder:text-sm" />
+                <button onClick={enterWaitlist} className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md font-semibold">Join waitlist</button>
+              </>}
           </div>
+          {isError && <p className="text-red-500">Please enter a valid email address</p>}
+
         </div>
+
         <Image
           src="/device.png"
           alt="device"
