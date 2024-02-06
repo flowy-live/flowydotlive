@@ -57,7 +57,7 @@ export default function Home() {
 
       <div className="lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col gap-2 py-10">
         <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl text-center text-white text-wrap">
+          <h1 className="text-2xl font-bold text-center text-white text-wrap">
             Mark your core team.
           </h1>
           <Image
@@ -70,7 +70,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl text-center text-white text-wrap">
+          <h1 className="text-2xl text-center font-bold text-white text-wrap">
             Get to your closest teammates.
           </h1>
           <Image
@@ -83,7 +83,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl text-center text-white text-wrap">
+          <h1 className="text-2xl text-center font-bold text-white text-wrap">
             Receive recorded voice clips.
           </h1>
           <Image
