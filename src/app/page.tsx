@@ -16,7 +16,7 @@ export default function Home() {
       <div className="lg:flex lg:flex-row space-x-8 pb-2">
         <div className="max-w-[800px] flex flex-col space-y-8 py-10 text-left items-left">
           <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-red-900 pb-2">
-            Our work lives are overwhelming.
+            Remote work is broken.
           </h1>
 
 
@@ -107,8 +107,8 @@ export default function Home() {
           <Image
             src="/schematic.png"
             alt="schematic"
-            height={500}
-            width={750}
+            height={900}
+            width={1000}
             priority
           />
         </div>
