@@ -15,7 +15,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch(`http://api.flowy.live/waitlist/${email}`, {
+      const response = await fetch(`https://api.flowy.live:5443/waitlist/${email}`, {
         method: "POST",
       });
       if (response.status === 200) {
