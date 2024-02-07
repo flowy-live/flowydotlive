@@ -82,15 +82,16 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col space-y-8 py-10 text-left items-left">
-          <div className="self-center">
+          <a className="self-center" href="/core_schematics.png" target="_blank">
             <Image
+              className="lg:-translate-x-10"
               src="/core_schematics.png"
               alt="schematic"
               height={900}
               width={1000}
               priority
             />
-          </div>
+          </a>
         </div>
 
         <div className="flex flex-col items-center py-20">
@@ -160,6 +161,6 @@ export default function Home() {
           <p className="text-gray-500 text-xs">© Flowy Inc. 2024 All rights reserved.</p>
         </div>
       </div>
-    </main>
+    </main >
   );
 }
