@@ -47,14 +47,15 @@ export default function Home() {
 
       <div className="lg:flex lg:flex-row space-x-8 pb-2">
         <div className="max-w-[800px] flex flex-col space-y-8 py-10 text-left items-left">
-          <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-red-900 pb-2">
-            Remote work is broken.
+          <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-teal-500 pb-2">
+            Out with the old, in with the new.
           </h1>
 
 
           <div className="max-w-[500px] text-left flex flex-col space-y-8">
-            <p className="text-white">
-              Endless threads & notifications. Conversations are everywhere, but no one is on the same page.
+            <p className="text-white text-lg">
+              We shouldn't need endless threads, calendars, notifications, and apps to get to our <b><u className="text-orange-200">team</u></b>. Move lighter and faster with flowy -
+              a minimalist, voice-first <b><u className="text-orange-200">(hand-held) device for remote teams.</u></b>
             </p>
 
             <Image
@@ -65,10 +66,6 @@ export default function Home() {
               priority
             />
 
-            <p className="text-transparent text-lg font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-teal-200">
-              Move lighter and faster with flowy -
-              a minimalist, voice-first device for team commz. It's like your core team is right there.
-            </p>
           </div>
 
           <div className="flex flex-row space-x-2">
