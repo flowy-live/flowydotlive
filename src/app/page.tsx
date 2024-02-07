@@ -75,7 +75,18 @@ export default function Home() {
             </>}
         </div>
         {isError && <p className="text-red-500">Please enter a valid email address</p>}
+      </div>
 
+      <div className="flex flex-col space-y-8 py-10 text-left items-left">
+        <div className="self-center">
+          <Image
+            src="/schematic.png"
+            alt="schematic"
+            height={900}
+            width={1000}
+            priority
+          />
+        </div>
       </div>
 
       <div className="flex flex-col items-center py-20">
@@ -128,17 +139,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col space-y-8 py-10 text-left items-left">
-        <div className="self-center">
-          <Image
-            src="/schematic.png"
-            alt="schematic"
-            height={900}
-            width={1000}
-            priority
-          />
-        </div>
-      </div>
 
       <p className="hidden w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
         Are you an investor?&nbsp;
@@ -149,7 +149,7 @@ export default function Home() {
 
       <div className="flex flex-row space-x-8 py-10 text-left items-center justify-between">
         <p>
-          Contact us:&nbsp;
+          Have questions? Contact us:&nbsp;
           <a href="mailto:arjun@flowy.live" className="font-bold">team@flowy.live</a>
         </p>
         <p className="text-gray-500 text-xs">© Flowy Inc. 2024 All rights reserved.</p>
