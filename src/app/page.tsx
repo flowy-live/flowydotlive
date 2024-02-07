@@ -54,7 +54,7 @@ export default function Home() {
 
           <div className="max-w-[500px] text-left flex flex-col space-y-8">
             <p className="text-white text-lg">
-              We shouldn't need endless threads, calendars, notifications, and apps to get to our <b><u className="text-orange-200">team</u></b>. Move lighter and faster with flowy -
+              We shouldn't need endless threads, calendars, notifications, and apps to get to our team. Move lighter and faster with flowy -
               a minimalist, voice-first <b><u className="text-orange-200">(hand-held) device for remote teams.</u></b>
             </p>
 
@@ -88,56 +88,57 @@ export default function Home() {
         />
       </div>
 
-      <hr className="w-full opacity-10" />
-
-      <div className="lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col gap-2 py-10">
-        <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl font-bold text-center text-white text-wrap">
-            Mark your core team.
-          </h1>
-          <Image
-            src="/howitworks1.png"
-            alt="schematic"
-            className="shadow-lg"
-            height={200}
-            width={300}
-            priority
-          />
-        </div>
-        <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl text-center font-bold text-white text-wrap">
-            Get to your closest teammates.
-          </h1>
-          <Image
-            className="shadow-lg"
-            src="/howitworks2.png"
-            alt="schematic"
-            height={200}
-            width={300}
-            priority
-          />
-        </div>
-        <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
-          <h1 className="text-2xl text-center font-bold text-white text-wrap">
-            Receive recorded voice clips.
-          </h1>
-          <Image
-            className="shadow-lg"
-            src="/howitworks3.png"
-            alt="schematic"
-            height={200}
-            width={300}
-            priority
-          />
+      <div className="flex flex-col items-center py-10">
+        <h1 className="text-5xl font-bold text-white dark:text-gray-100">
+          How it works
+        </h1>
+        <p className="text-gray-500">
+          Think walkie-talkie + voicemail.
+        </p>
+        <div className="lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col gap-2 py-10">
+          <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <h1 className="text-2xl font-bold text-center text-white text-wrap">
+              Add your team.
+            </h1>
+            <Image
+              src="/howitworks1.png"
+              alt="schematic"
+              className="shadow-lg"
+              height={200}
+              width={300}
+              priority
+            />
+          </div>
+          <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <h1 className="text-2xl text-center font-bold text-white text-wrap">
+              Get to your core team.
+            </h1>
+            <Image
+              className="shadow-lg"
+              src="/howitworks2.png"
+              alt="schematic"
+              height={200}
+              width={300}
+              priority
+            />
+          </div>
+          <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <h1 className="text-2xl text-center font-bold text-white text-wrap">
+              Receive recorded voice clips.
+            </h1>
+            <Image
+              className="shadow-lg"
+              src="/howitworks3.png"
+              alt="schematic"
+              height={200}
+              width={300}
+              priority
+            />
+          </div>
         </div>
       </div>
 
-      <hr className="w-full opacity-10" />
-
       <div className="flex flex-col space-y-8 py-10 text-left items-left">
-        <h1 className="text-3xl font-bold text-left text-white dark:text-gray-100">
-          schematic
-        </h1>
         <div className="self-center">
           <Image
             src="/schematic.png"
