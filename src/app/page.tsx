@@ -104,7 +104,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center py-20">
-          <h1 className="text-5xl text-center font-bold text-white dark:text-gray-100">
+          <h1 className="text-4xl text-center font-bold text-white dark:text-gray-100">
             How it works
           </h1>
           <p className="text-gray-500">
