@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main className="bg-[#1e1e1e] min-h-screen">
-      <div className="fixed py-1 top-0 left-0 w-screen bg-gradient-to-r from-teal-500 to-teal-900 flex flex-row justify-center">
+      <div className="fixed z-10 py-1 top-0 left-0 w-screen bg-gradient-to-r from-teal-500 to-teal-900 flex flex-row justify-center">
         <p className="font-bold text-teal-100 text-center">Target launch for flowy 1.0 device: <b>October 1st, 2024</b></p>
       </div>
       <div className="flex flex-col lg:p-24 p-5 pt-20">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center py-20">
-          <h1 className="text-5xl font-bold text-white dark:text-gray-100">
+          <h1 className="text-5xl text-center font-bold text-white dark:text-gray-100">
             How it works
           </h1>
           <p className="text-gray-500">
