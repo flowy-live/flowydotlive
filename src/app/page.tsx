@@ -35,10 +35,10 @@ export default function Home() {
 
   return (
     <main className="bg-[#1e1e1e] min-h-screen">
-      <div className="fixed py-1 top-0 left-0 w-full bg-gradient-to-r from-teal-500 to-teal-900 flex flex-row justify-center">
-        <p className="font-bold text-teal-100">Target launch for flowy 1.0 device: <b>October 1st, 2024</b></p>
+      <div className="fixed py-1 top-0 left-0 w-screen bg-gradient-to-r from-teal-500 to-teal-900 flex flex-row justify-center">
+        <p className="font-bold text-teal-100 text-center">Target launch for flowy 1.0 device: <b>October 1st, 2024</b></p>
       </div>
-      <div className="flex flex-col lg:p-24 p-5">
+      <div className="flex flex-col lg:p-24 p-5 pt-20">
         <div className="self-center before:absolute before:h-[100px] before:w-full sm:before:w-[300px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute before:z-[1] after:z-2 after:h-[70px] after:w-full sm:after:w-[120px] after:translate-x-1/3 after:-translate-y-16 after:bg-gradient-conic after:from-purple-200 after:via-purple-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-dark-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-teal-900 after:dark:opacity-40 before:lg:h-[360px] z-4 py-4">
           <Image
             src="/flowy-long-logo.svg"
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="flex flex-col space-y-8 py-10 text-left items-left">
           <div className="self-center">
             <Image
-              src="/schematic.png"
+              src="/core_schematics.png"
               alt="schematic"
               height={900}
               width={1000}
