@@ -1,12 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [tagline, setTagline] = useState("Out with the old, in with the new.");
+
+  // useEffect(() => {
+  //   Math.random() > 0.5 ?
+  //     setTagline("Out with the old, in with the new.")
+  //     :
+  //     setTagline("Remote work is broken.");
+  // }, [setTagline]);
 
   const enterWaitlist = useCallback(async () => {
     if (email === "") {
@@ -60,14 +68,13 @@ export default function Home() {
 
         <div className="max-w-[800px] self-center flex flex-col space-y-8 py-10 text-center items-center">
           <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-teal-500 pb-2">
-            Out with the old, in with the new.
+            {tagline}
           </h1>
-
 
           <div className="max-w-[500px] text-center items-center flex flex-col space-y-8">
             <p className="text-white text-lg">
-              We shouldn't need endless threads, calendars, notifications, and apps to get to our team. Move lighter and faster with flowy -
-              a minimalist, voice-first <b><u className="text-orange-200">(hand-held) device for remote teams.</u></b>
+              We shouldn't need endless threads, calendars, notifications, and apps to get to our team. Move lighter and faster with <b><u className="text-orange-200">flowy -
+                a minimalist, voice-first device for remote team commz.</u></b>
             </p>
 
             <Image
