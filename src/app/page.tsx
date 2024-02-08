@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
               <h1 className="text-2xl text-center font-bold text-white text-wrap">
-                Instantly get to your <i>core</i> team.
+                Instantly get to your <i>core</i> people.
               </h1>
               <Image
                 className="shadow-lg"
