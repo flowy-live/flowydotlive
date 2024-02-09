@@ -91,7 +91,7 @@ export default function Home() {
             {isSuccess ? <p className="text-green-500">You've been added to the waitlist!</p> :
               <>
                 <input value={email} onChange={handleEmailChange} type="email" placeholder="email address" className="p-2 bg-gray-800 text-white rounded-md placeholder:text-sm" />
-                <button onClick={enterWaitlist} className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md font-semibold">Join waitlist</button>
+                <button onClick={enterWaitlist} className="bg-gradient-to-r from-black to-gray-900 p-2 rounded-md font-semibold">Request prototype</button>
               </>}
           </div>
           {isError && <p className="text-red-500">Please enter a valid email address</p>}
@@ -118,7 +118,7 @@ export default function Home() {
             Think walkie-talkie + voicemail.
           </p>
           <div className="lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col gap-2 py-10">
-            <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <div className="flex flex-col justify-between space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
               <h1 className="text-2xl text-center text-white text-wrap">
                 Tune into your <i>core</i> team.
               </h1>
@@ -131,7 +131,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <div className="flex flex-col justify-between space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
               <h1 className="text-2xl text-center text-white text-wrap">
                 Instantly get to your <i>core</i> people.
               </h1>
@@ -144,7 +144,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
+            <div className="flex flex-col justify-between space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
               <h1 className="text-2xl text-center text-white text-wrap">
                 Receive recorded voice clips from others.
               </h1>
