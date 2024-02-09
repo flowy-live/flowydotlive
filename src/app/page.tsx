@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-8 text-left bg-gray-950 p-10 rounded-lg shadow-lg items-center">
               <h1 className="text-2xl text-center text-white text-wrap">
-                Receive recorded voice clips.
+                Receive recorded voice clips from others.
               </h1>
               <Image
                 className="shadow-lg"
