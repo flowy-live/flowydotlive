@@ -67,8 +67,8 @@ export default function Home() {
         </div>
 
         <div className="max-w-[800px] self-center flex flex-col space-y-8 py-10 text-center items-center">
-          <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-teal-500 pb-2">
-            {tagline}
+          <h1 className="text-5xl lg:text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-white from-10% to-red-500 pb-2">
+            Remote work is broken.
           </h1>
 
           <div className="max-w-[500px] text-center items-center flex flex-col space-y-8">
