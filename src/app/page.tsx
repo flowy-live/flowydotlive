@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="max-w-[500px] text-center items-center flex flex-col space-y-8">
             <p className="text-white text-lg">
-              We shouldn't need endless threads, calendars, notifications, and apps to get to our team. Move lighter and faster with <b><u className="text-orange-200">flowy -
+              We shouldn't need endless threads, calendars, notifications, and apps to get to our team. Move lighter and faster with <b><u className="text-purple-200">flowy -
                 a minimalist, voice-only device for remote team commz.</u></b>
             </p>
 
