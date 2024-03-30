@@ -1,5 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("../../fonts/Dotrice-Regular.otf");
+@import url("../../fonts/Dotrice-Bold.otf");
+@import url("../../fonts/Dotrice-Expanded.otf");
+@import url("../../fonts/Dotrice-Condensed.otf");
+@import url("../../fonts/Dotrice-Bold-Condensed.otf");
+@import url("../../fonts/Dotrice-Bold-Expanded.otf");
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -17,7 +22,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Dotrice";
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
