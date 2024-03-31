@@ -1,13 +1,15 @@
 /*=============== HOME ===============*/
 .home{
     &__img{
-        width: 250px;
-        position: absolute;
-        top: -16rem;
-        right: 1.5rem;
+        width: 300px;
+        margin-top: 10rem;
+        border-radius: 1rem;
+        // position: absolute;
+        // top: -30rem;
+        // right: 1.5rem;
     }
     &__data{
-        padding-top: 5rem;
+        // padding-top: 5rem;
     }
     &__header{
         position: relative;
